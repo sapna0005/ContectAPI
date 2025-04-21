@@ -1,5 +1,5 @@
 
-import { useContext,createContext,useState } from "react";
+import { createContext,useState } from "react";
 const myContext=createContext();
 
 const UserContext=({children})=>{
@@ -20,8 +20,8 @@ const UserContext=({children})=>{
         </>
     )
 }
-export default UserContext
-export {myContext}
+export default UserContext;
+export {myContext};
 
 
 

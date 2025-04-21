@@ -1,7 +1,9 @@
 
+import { useContext } from "react";
+import { myContext } from "./UserContext";
 
 const AuthApp=()=>{
-    const[user,logout]=useContext(myContext)
+    const{user,logout}=useContext(myContext);
     return(
         <>
         <h1>Welcome:{user.name}</h1>
